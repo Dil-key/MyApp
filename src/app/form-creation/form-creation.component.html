@@ -1,0 +1,70 @@
+<br>
+<h1 class="text-center">Please kind enough to fill this form</h1>
+<br>
+<div class="card"
+    style="width: 750px; padding: 50px; margin-inline: auto;background-color: rgb(35, 184, 164); align-items: center;border-radius: 15px; border-width: 5px; border-color: rgb(0, 0, 121);">
+    <div>
+        <div class="row">
+            <div class="col-3">
+                Name :
+            </div>
+            <div class="col-6">
+                <input placeholder="Type your name" [(ngModel)]="typedName">
+            </div>
+        </div>
+    </div>
+    <br>
+    <div>
+        <div class="row">
+            <div class="col-3">
+                Address :
+            </div>
+            <div class="col-6">
+                <input placeholder="Type your address" [(ngModel)]="typedAddress">
+            </div>
+        </div>
+    </div>
+    <br>
+    <div>
+        <div class="row">
+            <div class="col-3">
+                Gender :
+            </div>
+            <div class="col-6">
+                <select style="height:30px; width: 255px;" [(ngModel)]="selectedGender">
+                    <option value="" disabled selected hidden>Choose your gender</option>
+                    <option *ngFor="let item of Gender">{{item}}</option>
+                </select>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div>
+        <button (click)="onClick()">Submit</button>
+    </div>
+</div>
+<hr>
+
+<br>
+
+<div *ngIf="showDetails" class="card"
+    style="border-width: 2px; border-color: rgb(255, 172, 172); font-size: 25px; margin-left: 500px;text-align:center; width: 850px;padding: 50px;">
+    Hi {{finaltypedName|uppercase}}......
+    <br>
+    Your address is {{finaltypedAddress}}.
+    <br>
+    Your gender is {{finalselectedGender}}.
+    <br>
+    Have a great day!!!
+</div>
+
+<div>
+    <h1>this is result 1 = <b>{{res1}}</b> |||| this is result 2 = <b>{{res2}}</b> </h1>
+    <h1>{{final}}</h1>
+    <button (click)="test()">Click me</button>
+</div>
+
+<div>
+
+    <button (click)="test1()">Click me1</button>
+</div>
