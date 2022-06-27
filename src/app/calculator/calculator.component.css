@@ -1,0 +1,56 @@
+p {
+    position: absolute;
+    align-items: center;
+    color: rgb(0, 0, 0);
+}
+
+.maindisplay {
+    background: rgb(128, 128, 128);
+    color: white;
+    height: calc(100% / 3);
+    padding: 1.5% !important;
+    font-size: 1.5rem;
+    text-align: right;
+    font-family: Courier, monospace;
+    overflow: auto;
+    width: 25%;
+    margin-left: 686px;
+
+}
+.subdisplay {
+    border-bottom: 1px solid rgb(39, 65, 46);
+    height: 25%;
+    font-size: 1.5rem;
+    overflow: auto;
+}
+.keypad {
+    height: calc(200% / 3);
+    width: 25%;
+}
+.keys {
+    margin: 0;
+    width: 25%;
+    height: 20%;
+    background: whitesmoke;
+    color: black;
+    padding: 5%;
+    font-size: 2rem;
+    text-align: center;
+    cursor: pointer;
+}
+.one-line {
+    display: inline-block;
+}
+
+
+.ackey {
+    width: 100%;
+    height: 20%;
+    background: whitesmoke;
+    color: black;
+    padding: 5%;
+    font-size: 2rem;
+    text-align: center;
+    cursor: pointer;
+    align-items: right;
+}
